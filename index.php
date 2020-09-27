@@ -39,8 +39,8 @@
 					<h1>Transitive</h1>
 					<p>A full responsive, business-oriented HTML5/CSS3 template<br />
 					built by <a href="https://templated.co/">Templated</a> and released under the <a href="https://templated.co/license">Creative Commons</a>.</p>
-					<a href="#one" class="button special scrolly">Get Started</a>
-				</div>
+					<a href="#0" class="button special scrolly">Get Started</a>
+					</div>
 			</section>
 
 		<!-- One -->
@@ -101,30 +101,46 @@
 			</section>
  -->
 		<!-- Three -->
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
+
+
+		<?php 
+		$counter = 0;
+		require("php/scanFiles.php");
+		// echo "<h2>" . print_r($videoArray) . "</h2>";
+		
+		foreach ($videoArray as $video) {
+
+		echo '<section id="'. $counter . '" class="wrapper style2">';
+		echo	'<div class="inner">';
+		echo		'<div class="grid-style">';
+		echo			'<div>';
+		echo				'<div class="box">';
+		echo					'<div class="image fit">';
+		echo						'<video width="100%" height="100%" controls>';
+		echo							'<source src="videos/' . $video . '" type="video/mp4">';	
+		echo						'</video>';
+		echo						'</div>';
+		echo						 '<div class="content">';
+		echo							'<header class="align-center">';
+		echo								'<h2 style = "overflow: hidden">' . $video . print_r($videoArray) . '</h2>';										
+		echo							'</header>';
+		echo							'<hr />';
+		echo '</div></div></div></section>';
+		$counter++;
+	}
+
+		// print_r($videoArray);
+
+		?>
+			
+<!-- 
 
 						<div>
 							<div class="box">
 								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h2>Lorem ipsum dolor</h2>
-										<p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
-									</header>
-									<hr />
-								<!-- 	<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-								 --></div>
-							</div>
-						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
+									<video width="100%" height="100%" controls>
+										<source src="videos/Flutter Crash Course.mp4" type="video/mp4">
+									</video>
 								</div>
 								<div class="content">
 									<header class="align-center">
@@ -132,14 +148,14 @@
 										<p>mattis sapien pretium tellus venenatis</p>
 									</header>
 									<hr />
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+									
 								</div>
 							</div>
 						</div>
 
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Four -->
 			<section id="four" class="wrapper style3">
