@@ -116,9 +116,9 @@
 		// echo '<section id="'. $counter . '" class="wrapper style2">';
 		// echo	'<div class="inner">';
 		// echo		'<div class="grid-style">';
-		echo			'<div>';
+		echo			'<div style="overflow:hidden">';
 		echo				'<div class="box">';
-		echo					'<div class="image fit">';
+		echo					'<div class="image fit" style="display: flex; flex-direction: column; overflow: hidden;">';
 		echo						'<video width="100%" height="100%" controls>';
 		echo							'<source src="videos/' . $video . '" type="video/mp4">';	
 		echo						'</video>';
@@ -171,8 +171,8 @@
 				<div class="inner">
 
 					<header class="align-center">
-						<h2>Morbi interdum mollis sapien</h2>
-						<p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+						<h2>Built and Maintained by acadetorres</h2>
+						<p>Software is free to distribute, modify under gpl v3. </p>
 					</header>
 
 				</div>
