@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Transitive by TEMPLATED</title>
+		<title>PHP Local Network Video Player</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,10 +14,10 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Transitive <span>by TEMPLATED</span></a></div>
+			<!-- <header id="header" class="alt"> -->
+				<!-- <div class="logo"><a href="index.html">Transitive <span>by TEMPLATED</span></a></div> -->
 				<!-- <a href="#menu" class="toggle"><span>Menu</span></a> -->
-			</header>
+			<!-- </header> -->
 
 		<!-- Nav -->
 <!-- 			<nav id="menu">
@@ -36,10 +36,10 @@
 		-->
 			<section id="banner" data-video="images/banner">
 				<div class="inner">
-					<h1>Transitive</h1>
-					<p>A full responsive, business-oriented HTML5/CSS3 template<br />
-					built by <a href="https://templated.co/">Templated</a> and released under the <a href="https://templated.co/license">Creative Commons</a>.</p>
-					<a href="#0" class="button special scrolly">Get Started</a>
+					<h1>Home Network Video Player</h1>
+					<p>A network video player for tv's and other devices without native support for video files<br />
+					built by <a href="https://github.com/acadetorres/php-video-player">acadetorres</a>.</p>
+					<a href="#one" class="button special scrolly">Get Started</a>
 					</div>
 			</section>
 
@@ -101,18 +101,21 @@
 			</section>
  -->
 		<!-- Three -->
-
+<section id="one" class="wrapper style2">
+	<div class="inner">
+		<div class="grid-style">
 
 		<?php 
-		$counter = 0;
+		// $counter = 0;
 		require("php/scanFiles.php");
+		// echo "<h2>" . print_r($videoArray) ."</h2>";
 		// echo "<h2>" . print_r($videoArray) . "</h2>";
 		
 		foreach ($videoArray as $video) {
 
-		echo '<section id="'. $counter . '" class="wrapper style2">';
-		echo	'<div class="inner">';
-		echo		'<div class="grid-style">';
+		// echo '<section id="'. $counter . '" class="wrapper style2">';
+		// echo	'<div class="inner">';
+		// echo		'<div class="grid-style">';
 		echo			'<div>';
 		echo				'<div class="box">';
 		echo					'<div class="image fit">';
@@ -122,16 +125,22 @@
 		echo						'</div>';
 		echo						 '<div class="content">';
 		echo							'<header class="align-center">';
-		echo								'<h2 style = "overflow: hidden">' . $video . print_r($videoArray) . '</h2>';										
+		echo								'<h2 style = "overflow: hidden">'  . $video . '</h2>';										
 		echo							'</header>';
 		echo							'<hr />';
-		echo '</div></div></div></section>';
-		$counter++;
+		echo '</div></div></div>';
+		// $counter++;
 	}
 
 		// print_r($videoArray);
 
 		?>
+		
+		</div>
+	</div>
+
+		<!-- <div class = -->	
+</section>
 			
 <!-- 
 
